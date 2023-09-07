@@ -1,0 +1,8 @@
+---
+    apiVersion: source.toolkit.fluxcd.io/v1beta2
+    kind: HelmRepository
+    metadata:
+      name: nginx-ghcr
+    spec:
+      interval: 120m
+      url: https://ghcr.io/nginxinc/charts/nginx-ingress
